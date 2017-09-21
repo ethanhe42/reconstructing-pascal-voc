@@ -1,0 +1,30 @@
+Carvi, release 1.0, June 2014
+
+Implementation of paper:
+1. Reconstructing PASCAL VOC. Sara Vicente*, João Carreira*, Lourdes Agapito, Jorge Batista. CVPR 2014. (*denotes equal contribution)
+
+Run voc_experiment.m to reconstruct PASCAL VOC and a synthetic dataset having ground truth 3D meshes. Switch the "if 1" to "if 0" appropriately if you only want to reconstruct one of them. For the synthetic dataset, a reconstruction error will be measured, cached and displayed. All reconstructions and errors are saved in ./Results/. The estimated SFM parameters are saved in ./SFM_models/. 
+The two baselines mentioned in the paper are also executed on the synthetic dataset. 
+
+After the reconstructions are computed you can visualize them using visualize_result_synth.m and visualize_result_pascal.m. Read the function headers for examples on how to call them. 
+
+We have tested the code in MATLAB 2012b, in Linux. Rarely, the 3D error evaluation function crashes when run in parallel, rerunning it usually completes the process. We provide code for compiling the mex files, but it may not be 100% robust in different systems. Please look into the installation documentation of those mex files if you run into trouble.
+
+If you use this package or the synthetic dataset in your research please cite [1]. 
+
+The code in the experiments will automatically download the data. Check the datasets recommendations regarding citation. For Pascal VOC, check http://pascallin.ecs.soton.ac.uk/challenges/VOC/. For some of the figure-ground segmentations check http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html. For the keypoints check http://www.cs.berkeley.edu/~lbourdev/poselets/.
+
+The package uses a few external libraries / functions, located in the external_src/ directory:
+
+- Marques & Costeira rigid-SFM factorization code (http://users.isr.ist.utl.pt/~manuel/), slightly optimized.
+- RenderMe, (http://vision.princeton.edu/pvt/RenderMe/RenderMe/), which we edited to operate with triangles. 
+- Mesh-1.13 (http://mesh.berlios.de/. We converted it to mex format, but kept it reading the .off input file from disk.
+- write_off.m (https://github.com/gpeyre/numerical-tours/blob/master/toolbox_graph/write_off.m).
+- An implementation of the hungarian algorithm. (http://www.mathworks.com/matlabcentral/fileexchange/94-assignprob-zip/content/assignprob/hungarian.m).
+- boxoverlap.m from the DPM package (http://www.cs.berkeley.edu/~rbg/latent/)
+- An implementation of ICP (http://www.mathworks.com/matlabcentral/fileexchange/27804-iterative-closest-point).
+- immerge (http://www.mathworks.com/matlabcentral/fileexchange/5575-transparent-image-on-background)
+- pointTriangleDistance.m (http://www.mathworks.com/matlabcentral/fileexchange/22857-distance-between-a-point-and-a-triangle-in-3d/content/pointTriangleDistance.m)
+- several functions from the SvmSegm code base (those files starting with SvmSegm as well as DefaultVal.m and others).
+
+Check Dataset/SynthMeshes/README for details on the synthetic dataset.

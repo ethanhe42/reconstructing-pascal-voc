@@ -1,0 +1,27 @@
+Copyright (C) 2012 Joao Carreira and Sara Vicente
+    
+LICENSING AGREEMENT
+
+This package, carvi-release1 is granted free of charge for non-commercial research and education purposes. The software and derivatives of the software must 
+not be distributed commercially without prior permission from the authors. A license must be obtained from the authors for commercial purposes.
+
+Scientific results produced using the carvi-release1 software should acknowledge its use from the authors and cite the following article (we would like to hear about it if it turns out to be useful in your work and/or whenever research based on it is published):  
+
+@inproceedings{carvi_cvpr2014,
+  author = {S. Vicente, J. Carreira, L. Agapito and J. Batista},
+  title = {{Reconstructing PASCAL VOC}},
+  booktitle = {CVPR},
+  year = {2014},
+  month = {June}  
+}
+
+THE PROGRAM IS LICENSED FREE OF CHARGE FOR ACADEMIC USE. THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE SOFTWARE IS 
+PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS 
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+By using this software, carvi_release1, you agree to all licensing terms.

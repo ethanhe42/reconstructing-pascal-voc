@@ -1,0 +1,8 @@
+A browser for segmentation datasets.
+Follows the VOC semantic segmentation organization.
+
+Version 1.1 December 2013.
+Developed by Joao Carreira.
+
+A minor change from 1.0 that I can remember was adding a function that returns the ids of truncated and occluded segments. 
+Maybe there were a few others, nothing very important.
